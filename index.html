@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duy Hiếu ❤️ Huyền Trang - Wedding Invitation</title>
+    <title>Thiệp Mời Cưới - Duy Hiếu ❤️ Huyền Trang</title>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -112,7 +112,6 @@
 
         #mobile-menu.open {
             max-height: 400px;
-            /* Đủ lớn để chứa menu */
             opacity: 1;
         }
     </style>
@@ -253,82 +252,96 @@
 
     <!-- Wedding Events -->
     <section id="events" class="py-20 relative overflow-hidden bg-white">
-        <div class="min-h-screen bg-gradient-to-b from-white to-gray-100 flex items-center justify-center py-10 px-4">
-            <div
-                class="w-full max-w-5xl bg-white rounded-[40px] shadow-[0_20px_60px_rgba(0,0,0,0.1)] p-10 md:p-14 relative">
+  <div
+    class="min-h-screen bg-gradient-to-b from-white to-gray-100 flex items-center justify-center py-10 px-4"
+  >
+    <!-- CARD -->
+    <div
+      class="w-full max-w-5xl rounded-[40px] shadow-[0_20px_60px_rgba(0,0,0,0.1)] p-10 md:p-14 relative overflow-hidden
+             bg-[url('https://w0.peakpx.com/wallpaper/118/944/HD-wallpaper-wedding-invitation-rings-special-days-invitation-flowers-white-wedding-card.jpg')]
+             bg-cover bg-center bg-no-repeat"
+    >
+      <!-- Overlay để chữ dễ đọc -->
+      <div class="absolute inset-0 bg-white/60 backdrop-blur-[1px]"></div>
 
-                <!-- Grid layout -->
-                <div class="grid md:grid-cols-2 gap-10 items-center">
+      <!-- CONTENT (đặt relative để nổi lên trên overlay) -->
+      <div class="relative">
+        <!-- Grid layout -->
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+          <!-- LEFT CONTENT -->
+          <div class="space-y-4 text-gray-700">
+            <!-- Lời mời -->
+            <h2 class="text-center font-semibold text-xl tracking-wider">
+              TRÂN TRỌNG KÍNH MỜI
+            </h2>
 
-                    <!-- LEFT CONTENT -->
-                    <div class="space-y-4 text-gray-700">
-
-                        <!-- Lời mời -->
-                        <h2 class="text-center font-semibold text-xl tracking-wider">TRÂN TRỌNG KÍNH MỜI</h2>
-
-                        <div class="text-center">
-                            <span class="px-3 py-1 bg-wedding-gold rounded-full text-white font-medium">
-                                Bạn và Gia Đình
-                            </span>
-                        </div>
-
-                        <p class="text-center tracking-wide font-medium">
-                            TỚI DỰ BỮA CƠM THÂN MẬT CÙNG<br>GIA ĐÌNH CHÚNG MÌNH
-                        </p>
-
-                        <!-- Thời gian -->
-                        <div class="text-center space-y-2">
-                            <p class="text-lg font-semibold">VÀO LÚC</p>
-                            <p class="text-2xl font-bold text-wedding-gold">17 Giờ 00</p>
-                            <p class="text-lg font-semibold">Thứ Bảy</p>
-                            <p class="text-3xl font-bold text-wedding-gold ">20 | 12 | 2025</p>
-                            <p class="text-sm italic text-gray-500">(Tức ngày 20 tháng 11 năm Ất Tỵ)</p>
-                        </div>
-
-                        <!-- Địa điểm -->
-                        <div class="pt-4 text-center">
-                            <p class="text-sm font-semibold tracking-wider text-gray-600 text-wedding-gold">
-                                TẠI TƯ GIA NHÀ TRAI
-                            </p>
-
-                            <p class="text-gray-700 leading-relaxed">
-                                xóm Đông Xá - xã Đồng Thái - tỉnh Ninh Bình
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <!-- RIGHT IMAGE -->
-                    <div class="flex justify-center">
-                        <div class="relative bg-white rounded-[30px] p-3 shadow-inner">
-
-                            <!-- Double border -->
-                            <div class="absolute inset-2 rounded-[26px] border border-white/80 pointer-events-none">
-                            </div>
-                            <div class="absolute inset-4 rounded-[22px] border border-white/50 pointer-events-none">
-                            </div>
-
-                            <!-- Image -->
-                            <div class="rounded-[25px] overflow-hidden aspect-[3/4] w-full max-w-sm">
-                                <img src="/assest/HLA04214.jpg" alt="Wedding" class="w-full h-full object-cover">
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Names -->
-                <div class="text-center mt-10">
-                    <p class="text-2xl md:text-4xl font-script tracking-wide whitespace-nowrap text-wedding-gold">
-                        Duy Hiếu
-                        <span class="mx-4 md:mx-8">&</span>
-                        Huyền Trang
-                    </p>
-                    <p class="text-gray-500 italic mt-2 text-wedding-gold">Rất hân hạnh được đón tiếp!</p>
-                </div>
-
+            <div class="text-center">
+              <span class="px-3 py-1 bg-wedding-gold rounded-full text-white font-medium">
+                Bạn và Gia Đình
+              </span>
             </div>
+
+            <p class="text-center tracking-wide font-medium">
+              TỚI DỰ BỮA CƠM THÂN MẬT CÙNG<br />GIA ĐÌNH CHÚNG MÌNH
+            </p>
+
+            <!-- Thời gian -->
+            <div class="text-center space-y-2">
+              <p class="text-lg font-semibold">VÀO LÚC</p>
+              <p class="text-2xl font-bold text-wedding-gold">17 Giờ 30</p>
+              <p class="text-lg font-semibold">Thứ Bảy</p>
+              <p class="text-3xl font-bold text-wedding-gold">20 | 12 | 2025</p>
+              <p class="text-sm italic text-gray-500">(Tức ngày 20 tháng 11 năm Ất Tỵ)</p>
+            </div>
+
+            <!-- Địa điểm -->
+            <div class="pt-4 text-center">
+              <p class="text-sm font-semibold tracking-wider text-wedding-gold">
+                TẠI TƯ GIA NHÀ GÁI
+              </p>
+
+              <p class="text-gray-700 leading-relaxed">
+                thôn 7 - phường Trung Sơn - tỉnh Ninh Bình
+              </p>
+            </div>
+          </div>
+
+          <!-- RIGHT IMAGE -->
+          <div class="flex justify-center">
+            <div class="relative bg-white/70 rounded-[30px] p-3 shadow-inner backdrop-blur-sm">
+              <!-- Double border -->
+              <div class="absolute inset-2 rounded-[26px] border border-white/80 pointer-events-none"></div>
+              <div class="absolute inset-4 rounded-[22px] border border-white/50 pointer-events-none"></div>
+
+              <!-- Image -->
+              <div class="rounded-[25px] overflow-hidden aspect-[3/4] w-full max-w-sm">
+                <img
+                  src="./assest/HLA04214.jpg"
+                  alt="Wedding"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- Names -->
+        <div class="text-center mt-10">
+          <p
+            class="text-2xl md:text-4xl font-script tracking-wide whitespace-nowrap text-wedding-gold"
+          >
+            Duy Hiếu
+            <span class="mx-4 md:mx-8">&</span>
+            Huyền Trang
+          </p>
+
+          <p class="italic mt-2 text-wedding-gold/90">
+            Rất hân hạnh được đón tiếp!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
         <div class="max-w-md w-full mx-auto relative z-10 pt-12 px-4 sm:px-0">
 
@@ -355,7 +368,7 @@
 
                         <!-- Time info -->
                         <div class="space-y-2 sm:space-y-3 text-gray-600 mb-6">
-                            <p class="text-xl sm:text-2xl font-bold text-gray-800">11:00 Giờ</p>
+                            <p class="text-xl sm:text-2xl font-bold text-gray-800">13:00 Giờ</p>
                             <p class="text-base sm:text-lg">Chủ Nhật</p>
                             <p class="text-lg sm:text-xl font-semibold">21 | 12 | 2025</p>
                         </div>
@@ -407,25 +420,13 @@
                      class="w-full h-full object-cover rounded-[40px] rounded-bl-[0px] rounded-br-[0px]
                      shadow-lg">
             </div>
-
-            <!-- Right 6 images grid -->
-            <div class="md:col-span-2 grid grid-cols-2 gap-6">
-
-                <img src="./assest/ab2.jpg" 
-                     class="w-full h-full object-cover rounded-xl shadow-md">
-
-                <img src="./assest/ab3.jpg" 
-                     class="w-full h-full object-cover rounded-xl shadow-md">
-
-                <img src="./assest/ab4.jpg" 
-                     class="w-full h-full object-cover rounded-xl shadow-md">
-
-                <img src="./assest/ab5.jpg" 
-                     class="w-full h-full object-cover rounded-xl shadow-md">
-
-                <img src="./assest/ab6.jpg" 
-                     class="w-full h-full object-cover rounded-xl shadow-md">
-
+            
+            <div class="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <img src="./assest/ab2.jpg" class="w-full object-cover rounded-xl shadow-md">
+            <img src="./assest/ab3.jpg" class="w-full object-cover rounded-xl shadow-md">
+            <img src="./assest/ab4.jpg" class="w-full object-cover rounded-xl shadow-md">
+            <img src="./assest/ab5.jpg" class="w-full object-cover rounded-xl shadow-md">
+            <img src="./assest/ab6.jpg" class="w-full object-cover rounded-xl shadow-md">
             </div>
 
         </div>
@@ -448,7 +449,7 @@
         </button>
         <!-- Replace src with your audio file -->
         <audio id="bg-music" loop autoplay >
-            <source src="./assest/wedding.mp3" type="audio/mp3">
+            <source src="https://thanhphongai.github.io/wedding-invitation/assest/wedding.mp3" type="audio/mp3">
         </audio>
     </div>
 
@@ -608,5 +609,4 @@
 
     </script>
 </body>
-
 </html>
