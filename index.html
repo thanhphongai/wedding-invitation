@@ -1003,6 +1003,30 @@
             loadWishes();
         })();
         document.addEventListener("contextmenu", (e) => e.preventDefault());
+                window.addEventListener('keydown', function (e) {
+        // F12
+        if (e.key === 'F12' || e.keyCode === 123) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+        }
+
+        // Ctrl+Shift+I / Ctrl+Shift+J (DevTools)
+        if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+        }
+
+        // Ctrl+U (View source), Ctrl+S (save), Ctrl+Shift+C (inspect element)
+        if ((e.ctrlKey && e.key === 'u') ||
+            (e.ctrlKey && e.key === 's') ||
+            (e.ctrlKey && e.shiftKey && e.key === 'C')) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+        }
+        });
     </script>
 </body>
 
