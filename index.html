@@ -16,7 +16,8 @@
         href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- AOS Animation CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -37,6 +38,7 @@
                         'script': ['"Allura"', 'cursive'],
                         'serif': ['"Playfair Display"', 'serif'],
                         'sans': ['"Montserrat"', 'sans-serif'],
+                        'rsvp': ['"Cormorant Garamond"', 'serif'],
                     }
                 }
             }
@@ -45,8 +47,9 @@
 
     <style>
         img {
-            image-rendering: crisp-edges; 
+            image-rendering: crisp-edges;
         }
+
         body {
             overflow-x: hidden;
             color: #4A4A4A;
@@ -135,6 +138,7 @@
                     <a href="#couple" class="hover:text-wedding-gold transition">Cặp đôi</a>
                     <a href="#events" class="hover:text-wedding-gold transition">Sự kiện</a>
                     <a href="#gallery" class="hover:text-wedding-gold transition">Album</a>
+                    <a href="#rsvp" class="hover:text-wedding-gold transition">Gửi lời chúc</a>
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -155,81 +159,83 @@
     </nav>
 
     <!-- Hero Section -->
-<!-- Hero Section (upgrade) -->
-<header
-  class="relative min-h-[100svh] flex items-center justify-center bg-cover bg-center md:bg-fixed bg-scroll overflow-hidden"
-  style="background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070&auto=format&fit=crop');"
->
-  <!-- Depth overlay -->
-  <div class="absolute inset-0 bg-gradient-to-b from-black/35 via-black/20 to-black/70"></div>
+    <!-- Hero Section (upgrade) -->
+    <header
+        class="relative min-h-[100svh] flex items-center justify-center bg-cover bg-center md:bg-fixed bg-scroll overflow-hidden"
+        style="background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070&auto=format&fit=crop');">
+        <!-- Depth overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/35 via-black/20 to-black/70"></div>
 
-  <!-- Gold glow (top) -->
-  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(212,175,55,0.35)_0%,_rgba(0,0,0,0)_55%)]"></div>
+        <!-- Gold glow (top) -->
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(212,175,55,0.35)_0%,_rgba(0,0,0,0)_55%)]">
+        </div>
 
-  <!-- Pink glow (bottom) -->
-  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_rgba(250,230,230,0.28)_0%,_rgba(0,0,0,0)_60%)]"></div>
+        <!-- Pink glow (bottom) -->
+        <div
+            class="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_rgba(250,230,230,0.28)_0%,_rgba(0,0,0,0)_60%)]">
+        </div>
 
-  <!-- Fade to next section -->
-  <div class="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-b from-transparent to-soft-gray"></div>
+        <!-- Fade to next section -->
+        <div class="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-b from-transparent to-soft-gray"></div>
 
-  <!-- Content -->
-  <div class="relative z-10 w-full max-w-3xl px-4 text-center" data-aos="zoom-in" data-aos-duration="1500">
-    <div class="rounded-[44px] bg-white/10 backdrop-blur-xl border border-white/20 shadow-[0_30px_90px_rgba(0,0,0,0.35)] px-6 py-10 md:px-12 md:py-14">
+        <!-- Content -->
+        <div class="relative z-10 w-full max-w-3xl px-4 text-center" data-aos="zoom-in" data-aos-duration="1500">
+            <div
+                class="rounded-[44px] bg-white/10 backdrop-blur-xl border border-white/20 shadow-[0_30px_90px_rgba(0,0,0,0.35)] px-6 py-10 md:px-12 md:py-14">
 
-      <!-- Top pill -->
-      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/25 text-white/90">
-        <span class="font-serif tracking-[0.22em] text-xs md:text-sm uppercase">We Are Getting Married</span>
-      </div>
+                <!-- Top pill -->
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/25 text-white/90">
+                    <span class="font-serif tracking-[0.22em] text-xs md:text-sm uppercase">We Are Getting
+                        Married</span>
+                </div>
 
-        <h1 class="mt-6 font-script text-5xl md:text-8xl py-2
+                <h1 class="mt-6 font-script text-5xl md:text-8xl py-2
                 drop-shadow-lg bg-gradient-to-r from-wedding-gold via-white to-wedding-gold
                 bg-clip-text text-transparent">
-        <span class="block leading-[1.15] md:leading-[1.1]">Duy Hiếu</span>
-        <span class="block leading-none my-1">&</span>
-        <span class="block leading-[1.15] md:leading-[1.1]">Huyền Trang</span>
-        </h1>
+                    <span class="block leading-[1.15] md:leading-[1.1]">Duy Hiếu</span>
+                    <span class="block leading-none my-1">&</span>
+                    <span class="block leading-[1.15] md:leading-[1.1]">Huyền Trang</span>
+                </h1>
 
 
-      <div class="mt-6 flex items-center justify-center gap-3">
-        <span class="h-px w-10 bg-white/40"></span>
-        <span class="w-2.5 h-2.5 rounded-full bg-wedding-gold shadow-[0_0_20px_rgba(212,175,55,0.6)]"></span>
-        <span class="h-px w-10 bg-white/40"></span>
-      </div>
+                <div class="mt-6 flex items-center justify-center gap-3">
+                    <span class="h-px w-10 bg-white/40"></span>
+                    <span
+                        class="w-2.5 h-2.5 rounded-full bg-wedding-gold shadow-[0_0_20px_rgba(212,175,55,0.6)]"></span>
+                    <span class="h-px w-10 bg-white/40"></span>
+                </div>
 
-      <p class="mt-6 font-serif text-lg md:text-2xl text-white/95 tracking-widest">
-        21 . 12 . 2025
-      </p>
+                <p class="mt-6 font-serif text-lg md:text-2xl text-white/95 tracking-widest">
+                    21 . 12 . 2025
+                </p>
 
-      <!-- CTA -->
-    <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 w-full">
-    <a href="#events"
-        class="inline-flex justify-center items-center w-full sm:w-44 px-7 py-3 rounded-full
+                <!-- CTA -->
+                <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 w-full">
+                    <a href="#events" class="inline-flex justify-center items-center w-full sm:w-44 px-7 py-3 rounded-full
                 bg-wedding-gold text-white font-semibold shadow-lg hover:opacity-90 transition">
-        Sự kiện
-    </a>
+                        Sự kiện
+                    </a>
 
-    <a href="#gallery"
-        class="inline-flex justify-center items-center w-full sm:w-44 px-7 py-3 rounded-full
+                    <a href="#gallery" class="inline-flex justify-center items-center w-full sm:w-44 px-7 py-3 rounded-full
                 bg-white/10 text-white border border-white/30 hover:bg-white/15 transition">
-        Xem album
-    </a>
-    </div>
+                        Xem album
+                    </a>
+                </div>
 
 
-    </div>
-  </div>
+            </div>
+        </div>
 
-  <!-- Scroll Down Indicator -->
-    <a href="#couple"
-    class="absolute inset-x-0 bottom-[max(1.25rem,env(safe-area-inset-bottom))] z-20
-            flex justify-center text-white/90 animate-bounce"
-    aria-label="Scroll down">
-    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full
+        <!-- Scroll Down Indicator -->
+        <a href="#couple" class="absolute inset-x-0 bottom-[max(1.25rem,env(safe-area-inset-bottom))] z-20
+            flex justify-center text-white/90 animate-bounce" aria-label="Scroll down">
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full
                 bg-white/10 border border-white/20 backdrop-blur">
-        <i data-lucide="chevron-down" width="22" height="22"></i>
-    </span>
-    </a>
-</header>
+                <i data-lucide="chevron-down" width="22" height="22"></i>
+            </span>
+        </a>
+    </header>
 
 
     <!-- Couple Section -->
@@ -311,96 +317,88 @@
 
     <!-- Wedding Events -->
     <section id="events" class="py-20 relative overflow-hidden bg-white">
-  <div
-    class="min-h-screen bg-gradient-to-b from-white to-gray-100 flex items-center justify-center py-10 px-4"
-  >
-    <!-- CARD -->
-    <div
-      class="w-full max-w-5xl rounded-[40px] shadow-[0_20px_60px_rgba(0,0,0,0.1)] p-10 md:p-14 relative overflow-hidden
+        <div class="min-h-screen bg-gradient-to-b from-white to-gray-100 flex items-center justify-center py-10 px-4">
+            <!-- CARD -->
+            <div class="w-full max-w-5xl rounded-[40px] shadow-[0_20px_60px_rgba(0,0,0,0.1)] p-10 md:p-14 relative overflow-hidden
              bg-[url('https://w0.peakpx.com/wallpaper/118/944/HD-wallpaper-wedding-invitation-rings-special-days-invitation-flowers-white-wedding-card.jpg')]
-             bg-cover bg-center bg-no-repeat"
-    >
-      <!-- Overlay để chữ dễ đọc -->
-      <div class="absolute inset-0 bg-white/60 backdrop-blur-[1px]"></div>
+             bg-cover bg-center bg-no-repeat">
+                <!-- Overlay để chữ dễ đọc -->
+                <div class="absolute inset-0 bg-white/60 backdrop-blur-[1px]"></div>
 
-      <!-- CONTENT (đặt relative để nổi lên trên overlay) -->
-      <div class="relative">
-        <!-- Grid layout -->
-        <div class="grid md:grid-cols-2 gap-10 items-center">
-          <!-- LEFT CONTENT -->
-          <div class="space-y-4 text-gray-700">
-            <!-- Lời mời -->
-            <h2 class="text-center font-semibold text-xl tracking-wider">
-              TRÂN TRỌNG KÍNH MỜI
-            </h2>
+                <!-- CONTENT (đặt relative để nổi lên trên overlay) -->
+                <div class="relative">
+                    <!-- Grid layout -->
+                    <div class="grid md:grid-cols-2 gap-10 items-center">
+                        <!-- LEFT CONTENT -->
+                        <div class="space-y-4 text-gray-700">
+                            <!-- Lời mời -->
+                            <h2 class="text-center font-semibold text-xl tracking-wider">
+                                TRÂN TRỌNG KÍNH MỜI
+                            </h2>
 
-            <div class="text-center">
-              <span class="px-3 py-1 bg-wedding-gold rounded-full text-white font-medium">
-                Bạn và Gia Đình
-              </span>
+                            <div class="text-center">
+                                <span class="px-3 py-1 bg-wedding-gold rounded-full text-white font-medium">
+                                    Bạn và Gia Đình
+                                </span>
+                            </div>
+
+                            <p class="text-center tracking-wide font-medium">
+                                TỚI DỰ BỮA CƠM THÂN MẬT CÙNG<br />GIA ĐÌNH CHÚNG MÌNH
+                            </p>
+
+                            <!-- Thời gian -->
+                            <div class="text-center space-y-2">
+                                <p class="text-lg font-semibold">VÀO LÚC</p>
+                                <p class="text-2xl font-bold text-wedding-gold">17 Giờ 30</p>
+                                <p class="text-lg font-semibold">Thứ Bảy</p>
+                                <p class="text-3xl font-bold text-wedding-gold">20 | 12 | 2025</p>
+                                <p class="text-sm italic text-gray-500">(Tức ngày 20 tháng 11 năm Ất Tỵ)</p>
+                            </div>
+
+                            <!-- Địa điểm -->
+                            <div class="pt-4 text-center">
+                                <p class="text-sm font-semibold tracking-wider text-wedding-gold">
+                                    TẠI TƯ GIA NHÀ GÁI
+                                </p>
+
+                                <p class="text-gray-700 leading-relaxed">
+                                    thôn 7 - phường Trung Sơn - tỉnh Ninh Bình
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- RIGHT IMAGE -->
+                        <div class="flex justify-center">
+                            <div class="relative bg-white/70 rounded-[30px] p-3 shadow-inner backdrop-blur-sm">
+                                <!-- Double border -->
+                                <div class="absolute inset-2 rounded-[26px] border border-white/80 pointer-events-none">
+                                </div>
+                                <div class="absolute inset-4 rounded-[22px] border border-white/50 pointer-events-none">
+                                </div>
+
+                                <!-- Image -->
+                                <div class="rounded-[25px] overflow-hidden aspect-[3/4] w-full max-w-sm">
+                                    <img src="./assest/HLA04214.jpg" alt="Wedding" class="w-full h-full object-cover" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Names -->
+                    <div class="text-center mt-10">
+                        <p class="text-2xl md:text-4xl font-script tracking-wide whitespace-nowrap text-wedding-gold">
+                            Duy Hiếu
+                            <span class="mx-4 md:mx-8">&</span>
+                            Huyền Trang
+                        </p>
+
+                        <p class="italic mt-2 text-wedding-gold/90">
+                            Rất hân hạnh được đón tiếp!
+                        </p>
+                    </div>
+                </div>
             </div>
-
-            <p class="text-center tracking-wide font-medium">
-              TỚI DỰ BỮA CƠM THÂN MẬT CÙNG<br />GIA ĐÌNH CHÚNG MÌNH
-            </p>
-
-            <!-- Thời gian -->
-            <div class="text-center space-y-2">
-              <p class="text-lg font-semibold">VÀO LÚC</p>
-              <p class="text-2xl font-bold text-wedding-gold">17 Giờ 30</p>
-              <p class="text-lg font-semibold">Thứ Bảy</p>
-              <p class="text-3xl font-bold text-wedding-gold">20 | 12 | 2025</p>
-              <p class="text-sm italic text-gray-500">(Tức ngày 20 tháng 11 năm Ất Tỵ)</p>
-            </div>
-
-            <!-- Địa điểm -->
-            <div class="pt-4 text-center">
-              <p class="text-sm font-semibold tracking-wider text-wedding-gold">
-                TẠI TƯ GIA NHÀ GÁI
-              </p>
-
-              <p class="text-gray-700 leading-relaxed">
-                thôn 7 - phường Trung Sơn - tỉnh Ninh Bình
-              </p>
-            </div>
-          </div>
-
-          <!-- RIGHT IMAGE -->
-          <div class="flex justify-center">
-            <div class="relative bg-white/70 rounded-[30px] p-3 shadow-inner backdrop-blur-sm">
-              <!-- Double border -->
-              <div class="absolute inset-2 rounded-[26px] border border-white/80 pointer-events-none"></div>
-              <div class="absolute inset-4 rounded-[22px] border border-white/50 pointer-events-none"></div>
-
-              <!-- Image -->
-              <div class="rounded-[25px] overflow-hidden aspect-[3/4] w-full max-w-sm">
-                <img
-                  src="./assest/HLA04214.jpg"
-                  alt="Wedding"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
         </div>
-
-        <!-- Names -->
-        <div class="text-center mt-10">
-          <p
-            class="text-2xl md:text-4xl font-script tracking-wide whitespace-nowrap text-wedding-gold"
-          >
-            Duy Hiếu
-            <span class="mx-4 md:mx-8">&</span>
-            Huyền Trang
-          </p>
-
-          <p class="italic mt-2 text-wedding-gold/90">
-            Rất hân hạnh được đón tiếp!
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
 
         <div class="max-w-md w-full mx-auto relative z-10 pt-12 px-4 sm:px-0">
 
@@ -461,36 +459,246 @@
     </section>
 
     <!-- Gallery Section -->
-<section id="gallery" class="py-20 bg-[#F7F7F5]">
-    <div class="max-w-7xl mx-auto px-4">
+    <section id="gallery" class="py-20 bg-[#F7F7F5]">
+        <div class="max-w-7xl mx-auto px-4">
 
-        <!-- Title -->
-        <div class="text-center mb-14">
-            <span class="text-wedding-gold font-script text-3xl">Moments</span>
-            <h2 class="font-serif text-4xl mt-2 text-wedding-text">Album Hình Cưới</h2>
-        </div>
+            <!-- Title -->
+            <div class="text-center mb-14">
+                <span class="text-wedding-gold font-script text-3xl">Moments</span>
+                <h2 class="font-serif text-4xl mt-2 text-wedding-text">Album Hình Cưới</h2>
+            </div>
 
-        <!-- Main Layout -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Main Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-            <!-- Left big image -->
-            <div class="md:col-span-1 flex justify-center">
-                <img src="./assest/ab1.jpg"
-                     class="w-full h-full object-cover rounded-[40px] rounded-bl-[0px] rounded-br-[0px]
+                <!-- Left big image -->
+                <div class="md:col-span-1 flex justify-center">
+                    <img src="./assest/ab1.jpg" class="w-full h-full object-cover rounded-[40px] rounded-bl-[0px] rounded-br-[0px]
                      shadow-lg">
+                </div>
+
+                <div class="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <img src="./assest/ab2.jpg" class="w-full object-cover rounded-xl shadow-md">
+                    <img src="./assest/ab3.jpg" class="w-full object-cover rounded-xl shadow-md">
+                    <img src="./assest/ab4.jpg" class="w-full object-cover rounded-xl shadow-md">
+                    <img src="./assest/ab5.jpg" class="w-full object-cover rounded-xl shadow-md">
+                    <img src="./assest/ab6.jpg" class="w-full object-cover rounded-xl shadow-md">
+                </div>
+
             </div>
-            
-            <div class="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
-            <img src="./assest/ab2.jpg" class="w-full object-cover rounded-xl shadow-md">
-            <img src="./assest/ab3.jpg" class="w-full object-cover rounded-xl shadow-md">
-            <img src="./assest/ab4.jpg" class="w-full object-cover rounded-xl shadow-md">
-            <img src="./assest/ab5.jpg" class="w-full object-cover rounded-xl shadow-md">
-            <img src="./assest/ab6.jpg" class="w-full object-cover rounded-xl shadow-md">
+        </div>
+    </section>
+
+    <!-- Gift Box / Banking -->
+    <section id="gift" class="py-20 bg-wedding-pink/25">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+
+            <!-- Title -->
+            <div class="mb-10" data-aos="fade-up">
+
+                <p class="mt-3 text-wedding-text/70">
+                    Quét QR hoặc chuyển khoản
+                </p>
             </div>
 
+            <!-- Card -->
+            <div class="max-w-md mx-auto" data-aos="fade-up" data-aos-delay="100">
+                <div class="relative overflow-hidden rounded-3xl bg-white/90 backdrop-blur-md
+               border border-wedding-gold/25
+               shadow-[0_18px_45px_rgba(0,0,0,0.12)]
+               p-6 md:p-8 text-left">
+
+                    <!-- subtle highlight -->
+                    <div class="pointer-events-none absolute inset-0 opacity-60
+                    bg-[radial-gradient(ellipse_at_top,_rgba(212,175,55,0.18)_0%,_rgba(255,255,255,0)_55%)]"></div>
+
+                    <div class="relative flex items-start justify-between gap-4">
+                        <div>
+                            <p class="text-xs tracking-[0.22em] uppercase text-wedding-text/60">Bride Bank</p>
+                            <p class="font-serif text-2xl text-wedding-text leading-tight mt-1">Huyền Trang</p>
+                        </div>
+
+                        <div class="shrink-0 w-11 h-11 rounded-full bg-wedding-gold/15 border border-wedding-gold/25
+                      flex items-center justify-center text-wedding-gold font-script text-2xl">
+                            HT
+                        </div>
+                    </div>
+
+                    <div class="relative mt-6 grid grid-cols-1 sm:grid-cols-[170px,1fr] gap-5 items-center">
+                        <!-- QR (thay bằng ảnh QR thật nếu có) -->
+                        <div class="mx-auto sm:mx-0 w-[170px] h-[170px] rounded-2xl bg-soft-gray
+                   border border-wedding-gold/20 flex items-center justify-center text-wedding-text/40">
+                            <img src="./assest/qrcode.png" class="w-full h-full object-cover" alt="QR">
+                        </div>
+
+                        <!-- Info -->
+                        <div class="space-y-3 text-wedding-text">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="landmark" class="w-4 h-4 text-wedding-gold"></i>
+                                <p class="font-semibold">Vietcombank</p>
+                            </div>
+
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="user" class="w-4 h-4 text-wedding-gold"></i>
+                                <p class="font-semibold">PHAM THI HUYEN TRANG</p>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <i data-lucide="credit-card" class="w-4 h-4 text-wedding-gold mt-0.5"></i>
+                                <div class="w-full">
+                                    <p class="font-mono text-base md:text-lg font-semibold">1023885133</p>
+
+                                    <!-- Copy -->
+                                    <button type="button" class="mt-2 inline-flex items-center gap-2 px-3 py-2 rounded-full
+                         bg-wedding-gold text-white text-sm font-semibold shadow-sm hover:opacity-90 transition"
+                                        onclick="navigator.clipboard.writeText('1023885133')">
+                                        <i data-lucide="copy" class="w-4 h-4"></i>
+                                        Copy STK
+                                    </button>
+                                </div>
+                            </div>
+
+                            <p class="text-xs text-wedding-text/60 italic pt-1">
+                                Nội dung: <span class="font-semibold">[Tên bạn] mừng cưới HT</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- inner border -->
+                    <div class="pointer-events-none absolute inset-3 rounded-[22px] border border-wedding-gold/35">
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- RSVP Section -->
+    <section id="rsvp" class="py-20 bg-soft-gray relative overflow-hidden">
+        <!-- nền trang trí nhẹ -->
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute -top-24 -left-24 w-80 h-80 rounded-full bg-wedding-pink/40 blur-3xl"></div>
+            <div class="absolute -bottom-24 -right-24 w-80 h-80 rounded-full bg-wedding-gold/15 blur-3xl"></div>
+        </div>
+
+        <div class="max-w-3xl mx-auto px-4 relative z-10">
+            <div class="relative overflow-hidden rounded-[36px] bg-white/85 backdrop-blur-md
+             border border-wedding-gold/25 shadow-[0_20px_60px_rgba(0,0,0,0.12)]
+             p-7 md:p-10" data-aos="zoom-in-up">
+                <div class="pointer-events-none absolute inset-3 rounded-[28px] border border-wedding-gold/20"></div>
+
+                <!-- header -->
+                <div class="text-center relative">
+                    <div class="mx-auto w-12 h-12 rounded-2xl bg-wedding-gold/15 border border-wedding-gold/25
+                    flex items-center justify-center">
+                        <i data-lucide="heart-handshake" class="w-6 h-6 text-wedding-gold"></i>
+                    </div>
+
+                    <p class="mt-4 font-script text-4xl text-wedding-gold">Gửi lời chúc</p>
+                    <p class="mt-2 font-serif italic text-wedding-text/70">
+                        Để lại một lời nhắn nhỏ cho tụi mình nhé 💛
+                    </p>
+                </div>
+
+                <!-- form -->
+                <form id="wish-form"
+                    action="https://script.google.com/macros/s/AKfycbwunIhT_psTgFBnU9iBOGgwGAA3INi4KKi9SrMdg7CI6tzoda5goD9KxupiU3M7vwco/exec"
+                    method="POST" target="wish_iframe" class="mt-8 space-y-5 text-left relative">
+                    <!-- token -->
+                    <input type="hidden" name="token" value="ht-wedding-2025" />
+                    <!-- honeypot -->
+                    <input type="text" name="website" class="hidden" tabindex="-1" autocomplete="off" />
+                    <!-- type để Apps Script biết đây là lời chúc -->
+                    <input type="hidden" name="type" value="wish" />
+
+                    <!-- Name -->
+                    <div>
+                        <label class="block text-xs tracking-[0.18em] uppercase text-wedding-text/60 mb-2">
+                            Tên của bạn
+                        </label>
+                        <div class="relative">
+                            <i data-lucide="user"
+                                class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 z-10 w-4 h-4 text-wedding-gold"></i>
+                            <input type="text" name="guest_name" required maxlength="60"
+                                class="w-full rounded-2xl bg-white/85 backdrop-blur border border-wedding-gold/20
+                     px-11 py-3 text-wedding-text placeholder:text-wedding-text/35 shadow-sm
+                     focus:outline-none focus:ring-2 focus:ring-wedding-gold/25 focus:border-wedding-gold/40 transition" placeholder="Ví dụ: Nguyễn Văn A" />
+                        </div>
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label class="block text-xs tracking-[0.18em] uppercase text-wedding-text/60 mb-2">
+                            Lời chúc
+                        </label>
+                        <div class="relative">
+                            <i data-lucide="message-circle"
+                                class="pointer-events-none absolute left-4 top-4 z-10 w-4 h-4 text-wedding-gold"></i>
+                            <textarea name="message" required rows="4" maxlength="500"
+                                class="w-full rounded-2xl bg-white/85 backdrop-blur border border-wedding-gold/20
+                     pl-11 pr-4 py-3 text-wedding-text placeholder:text-wedding-text/35 shadow-sm resize-none
+                     focus:outline-none focus:ring-2 focus:ring-wedding-gold/25 focus:border-wedding-gold/40 transition"
+                                placeholder="Chúc hai bạn trăm năm hạnh phúc…"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Submit -->
+                    <button id="wish-submit" type="submit" class="w-full inline-flex items-center justify-center rounded-2xl
+                 bg-wedding-gold text-white py-3 font-semibold tracking-wide
+                 shadow-[0_14px_30px_rgba(212,175,55,0.25)]
+                 hover:opacity-90 transition
+                 disabled:opacity-60 disabled:cursor-not-allowed">
+                        <span id="wish-btn-text" class="inline-flex items-center gap-2">
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                            Gửi lời chúc
+                        </span>
+
+                        <span id="wish-btn-loading" class="hidden items-center gap-2">
+                            <i data-lucide="loader-2" class="w-4 h-4 animate-spin"></i>
+                        </span>
+                    </button>
+
+                    <p id="wish-status" class="text-center text-sm text-wedding-text/70 hidden mt-3" aria-live="polite">
+                    </p>
+                </form>
+
+                <iframe name="wish_iframe" class="hidden"></iframe>
+
+                <!-- Divider -->
+                <div class="mt-10 mb-6 flex items-center justify-center gap-3">
+                    <span class="h-px w-10 bg-wedding-gold/25"></span>
+                    <span class="w-2 h-2 rounded-full bg-wedding-gold/60"></span>
+                    <span class="h-px w-10 bg-wedding-gold/25"></span>
+                </div>
+
+                <!-- Wish list -->
+                <div class="relative">
+                    <div class="flex items-center justify-between gap-3">
+                        <h3 class="font-serif text-xl text-wedding-text">
+                            Lời chúc gần đây
+                        </h3>
+                        <button id="wish-refresh" type="button"
+                            class="inline-flex items-center gap-2 text-sm text-wedding-text/70 hover:text-wedding-text transition">
+                            <i data-lucide="refresh-cw" class="w-4 h-4 text-wedding-gold"></i>
+                            Tải lại
+                        </button>
+                    </div>
+
+                    <div id="wish-list" class="mt-4 space-y-3">
+                        <!-- render bằng JS -->
+                        <div class="rounded-2xl border border-wedding-gold/15 bg-white/70 p-4 text-wedding-text/70">
+                            Đang tải lời chúc...
+                        </div>
+                    </div>
+
+                    <button id="wish-more" type="button" class="mt-5 w-full rounded-2xl border border-wedding-gold/25 bg-white/70 py-3
+                 text-wedding-text hover:bg-white transition hidden">
+                        Xem thêm
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12 text-center">
@@ -507,7 +715,7 @@
             <i data-lucide="pause"></i>
         </button>
         <!-- Replace src with your audio file -->
-        <audio id="bg-music" loop autoplay >
+        <audio id="bg-music" loop autoplay>
             <source src="https://thanhphongai.github.io/wedding-invitation/assest/wedding.mp3" type="audio/mp3">
         </audio>
     </div>
@@ -666,6 +874,142 @@
             isPlaying = !isPlaying;
         });
 
+        (function () {
+            const ENDPOINT = "https://script.google.com/macros/s/AKfycbwunIhT_psTgFBnU9iBOGgwGAA3INi4KKi9SrMdg7CI6tzoda5goD9KxupiU3M7vwco/exec";
+
+            const form = document.getElementById("wish-form");
+            const iframe = document.querySelector('iframe[name="wish_iframe"]');
+            const btn = document.getElementById("wish-submit");
+            const btnText = document.getElementById("wish-btn-text");
+            const btnLoading = document.getElementById("wish-btn-loading");
+            const status = document.getElementById("wish-status");
+
+            const listEl = document.getElementById("wish-list");
+            const refreshBtn = document.getElementById("wish-refresh");
+            const moreBtn = document.getElementById("wish-more");
+
+            let submitted = false;
+            let injectScript = null;
+            let limit = 10;
+
+            function setLoading(isLoading) {
+                btn.disabled = isLoading;
+                btnText.classList.toggle("hidden", isLoading);
+                btnLoading.classList.toggle("hidden", !isLoading);
+            }
+
+            function escapeText(s) { return (s ?? "").toString(); }
+
+            function renderItems(items) {
+                listEl.innerHTML = "";
+                if (!items || items.length === 0) {
+                    const empty = document.createElement("div");
+                    empty.className = "rounded-2xl border border-wedding-gold/15 bg-white/70 p-4 text-wedding-text/70";
+                    empty.textContent = "Chưa có lời chúc nào. Bạn là người đầu tiên nhé ✨";
+                    listEl.appendChild(empty);
+                    moreBtn.classList.add("hidden");
+                    return;
+                }
+
+                items.forEach(it => {
+                    const card = document.createElement("div");
+                    card.className = "rounded-2xl border border-wedding-gold/15 bg-white/80 p-4 shadow-sm";
+
+                    const top = document.createElement("div");
+                    top.className = "flex items-start justify-between gap-3";
+
+                    const nameWrap = document.createElement("div");
+                    nameWrap.className = "flex items-center gap-3";
+
+                    const avatar = document.createElement("div");
+                    avatar.className = "w-10 h-10 rounded-full bg-wedding-gold/15 border border-wedding-gold/20 flex items-center justify-center text-wedding-gold font-serif font-bold";
+                    const initials = (escapeText(it.name).trim().slice(0, 1) || "♥").toUpperCase();
+                    avatar.textContent = initials;
+
+                    const name = document.createElement("div");
+                    const nameText = document.createElement("p");
+                    nameText.className = "font-semibold text-wedding-text";
+                    nameText.textContent = escapeText(it.name);
+
+                    const timeText = document.createElement("p");
+                    timeText.className = "text-xs text-wedding-text/55";
+                    const d = it.ts ? new Date(it.ts) : null;
+                    timeText.textContent = d && !isNaN(d.getTime()) ? d.toLocaleString("vi-VN") : "";
+
+                    name.appendChild(nameText);
+                    if (timeText.textContent) name.appendChild(timeText);
+
+                    nameWrap.appendChild(avatar);
+                    nameWrap.appendChild(name);
+
+                    const heart = document.createElement("div");
+                    heart.className = "text-wedding-gold/80";
+                    heart.innerHTML = '<i data-lucide="sparkles" class="w-4 h-4"></i>';
+
+                    top.appendChild(nameWrap);
+                    top.appendChild(heart);
+
+                    const msg = document.createElement("p");
+                    msg.className = "mt-3 text-wedding-text/80 leading-relaxed";
+                    msg.textContent = escapeText(it.message);
+
+                    card.appendChild(top);
+                    card.appendChild(msg);
+
+                    listEl.appendChild(card);
+                });
+
+                // hiển thị nút xem thêm (nếu muốn)
+                moreBtn.classList.remove("hidden");
+
+                // render icon mới trong list
+                if (window.lucide) lucide.createIcons();
+            }
+
+            window.__renderWishes = function (payload) {
+                if (!payload || !payload.ok) {
+                    listEl.innerHTML = '<div class="rounded-2xl border border-wedding-gold/15 bg-white/70 p-4 text-wedding-text/70">Không tải được lời chúc. Bạn thử lại giúp mình nhé.</div>';
+                    return;
+                }
+                renderItems(payload.items || []);
+            };
+
+            function loadWishes() {
+                listEl.innerHTML = '<div class="rounded-2xl border border-wedding-gold/15 bg-white/70 p-4 text-wedding-text/70">Đang tải lời chúc...</div>';
+
+                if (injectScript) injectScript.remove();
+                injectScript = document.createElement("script");
+                injectScript.src = `${ENDPOINT}?mode=list&type=wish&limit=${limit}&callback=__renderWishes&_=${Date.now()}`;
+                document.body.appendChild(injectScript);
+            }
+
+            // submit loading + reload list
+            form.addEventListener("submit", () => {
+                submitted = true;
+                status.classList.add("hidden");
+                setLoading(true);
+            });
+
+            iframe.addEventListener("load", () => {
+                if (!submitted) return;
+                submitted = false;
+
+                setLoading(false);
+                status.textContent = "Đã gửi ✅ Cảm ơn bạn!";
+                status.classList.remove("hidden");
+                form.reset();
+
+                loadWishes();
+                setTimeout(() => status.classList.add("hidden"), 3500);
+            });
+
+            refreshBtn.addEventListener("click", loadWishes);
+            moreBtn.addEventListener("click", () => { limit = Math.min(limit + 10, 50); loadWishes(); });
+
+            // load lần đầu
+            loadWishes();
+        })();
     </script>
 </body>
+
 </html>
