@@ -155,23 +155,82 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="relative h-screen flex items-center justify-center bg-cover bg-center bg-fixed"
-        style="background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070&auto=format&fit=crop');">
-        <div class="absolute inset-0 hero-overlay"></div>
-        <div class="relative z-10 text-center text-white px-4" data-aos="zoom-in" data-aos-duration="1500">
-            <p class="font-serif tracking-[0.2em] text-sm md:text-xl uppercase mb-4">We Are Getting Married</p>
-            <h1 class="font-script text-5xl md:text-8xl mb-6 text-wedding-gold drop-shadow-lg leading-tight">Duy Hiếu
-                <br class="md:hidden"> & <br class="md:hidden"> Huyền Trang
-            </h1>
-            <div class="w-24 h-1 bg-wedding-gold mx-auto mb-6"></div>
-            <p class="font-serif text-xl md:text-2xl mb-8">21 . 12 . 2025</p>
-        </div>
+<!-- Hero Section (upgrade) -->
+<header
+  class="relative min-h-[100svh] flex items-center justify-center bg-cover bg-center md:bg-fixed bg-scroll overflow-hidden"
+  style="background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070&auto=format&fit=crop');"
+>
+  <!-- Depth overlay -->
+  <div class="absolute inset-0 bg-gradient-to-b from-black/35 via-black/20 to-black/70"></div>
 
-        <!-- Scroll Down Indicator -->
-        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-white">
-            <i data-lucide="chevron-down" width="32" height="32"></i>
-        </div>
-    </header>
+  <!-- Gold glow (top) -->
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(212,175,55,0.35)_0%,_rgba(0,0,0,0)_55%)]"></div>
+
+  <!-- Pink glow (bottom) -->
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_rgba(250,230,230,0.28)_0%,_rgba(0,0,0,0)_60%)]"></div>
+
+  <!-- Fade to next section -->
+  <div class="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-b from-transparent to-soft-gray"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 w-full max-w-3xl px-4 text-center" data-aos="zoom-in" data-aos-duration="1500">
+    <div class="rounded-[44px] bg-white/10 backdrop-blur-xl border border-white/20 shadow-[0_30px_90px_rgba(0,0,0,0.35)] px-6 py-10 md:px-12 md:py-14">
+
+      <!-- Top pill -->
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/25 text-white/90">
+        <span class="font-serif tracking-[0.22em] text-xs md:text-sm uppercase">We Are Getting Married</span>
+      </div>
+
+        <h1 class="mt-6 font-script text-5xl md:text-8xl py-2
+                drop-shadow-lg bg-gradient-to-r from-wedding-gold via-white to-wedding-gold
+                bg-clip-text text-transparent">
+        <span class="block leading-[1.15] md:leading-[1.1]">Duy Hiếu</span>
+        <span class="block leading-none my-1">&</span>
+        <span class="block leading-[1.15] md:leading-[1.1]">Huyền Trang</span>
+        </h1>
+
+
+      <div class="mt-6 flex items-center justify-center gap-3">
+        <span class="h-px w-10 bg-white/40"></span>
+        <span class="w-2.5 h-2.5 rounded-full bg-wedding-gold shadow-[0_0_20px_rgba(212,175,55,0.6)]"></span>
+        <span class="h-px w-10 bg-white/40"></span>
+      </div>
+
+      <p class="mt-6 font-serif text-lg md:text-2xl text-white/95 tracking-widest">
+        21 . 12 . 2025
+      </p>
+
+      <!-- CTA -->
+    <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 w-full">
+    <a href="#events"
+        class="inline-flex justify-center items-center w-full sm:w-44 px-7 py-3 rounded-full
+                bg-wedding-gold text-white font-semibold shadow-lg hover:opacity-90 transition">
+        Sự kiện
+    </a>
+
+    <a href="#gallery"
+        class="inline-flex justify-center items-center w-full sm:w-44 px-7 py-3 rounded-full
+                bg-white/10 text-white border border-white/30 hover:bg-white/15 transition">
+        Xem album
+    </a>
+    </div>
+
+
+    </div>
+  </div>
+
+  <!-- Scroll Down Indicator -->
+    <a href="#couple"
+    class="absolute inset-x-0 bottom-[max(1.25rem,env(safe-area-inset-bottom))] z-20
+            flex justify-center text-white/90 animate-bounce"
+    aria-label="Scroll down">
+    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full
+                bg-white/10 border border-white/20 backdrop-blur">
+        <i data-lucide="chevron-down" width="22" height="22"></i>
+    </span>
+    </a>
+</header>
+
 
     <!-- Couple Section -->
     <section id="couple" class="py-20 bg-white">
